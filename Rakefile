@@ -5,9 +5,8 @@ require 'coffee-script'
 
 HAML = FileList.new('**/*.haml').ext('html')
 SCSS = FileList.new('**/*.scss').ext('css')
-COFFEE = FileList.new('**/*.coffee').ext('js')
-
-CLOBBER.include HAML + SCSS + COFFEE
+Haml::Engine
+CLOBBER.include HAML + SCSS
 
 rule '.html' => '.haml' do |t|
   puts "Generating #{t.name}"
@@ -19,18 +18,13 @@ rule '.css' => '.scss' do |t|
   File.open(t.name, 'w') { |f| f << Sass::Engine.new(open(t.source).read, :syntax => :scss, :style => :compressed).render }
 end
 
-rule '.js' => '.coffee' do |t|
-  puts "Generating #{t.name}"
-  require "yui/compressor"
-  File.open(t.name, 'w') { |f| f << YUI::JavaScriptCompressor.new(:munge => true).compress(`coffee -p #{t.source}`) }
-end
-
 desc 'Generate html, css and js from sources.'
-task :default => HAML + SCSS + COFFEE do
+task :default => HAML + SCSS do
+  sh %{ coffee -o js/ -c coffee/*.coffee }
 end
 
 desc 'Build and start server'
 task :server => :default do
-  sh %{ jekyll --server --auto }
+  sh %{ jekyll --server --safe }
 end
 
