@@ -7,9 +7,8 @@ description: > # "Bla Bla Bla"
 markdown: kramdown
 permalink: pretty
 
-skype:
-  id: SkypeButton_Chat_kubica1988
-  title: skype
+skype_id: SkypeButton_Chat_kubica1988
+skype_title: skype
 
 social:
   - title: github
