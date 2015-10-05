@@ -37,7 +37,7 @@
                     <ul class="list-inline intro-social-buttons">
                         {% for social in site.social %}
                         <li>
-                            <a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+                            <div id="{{ social.id }}"><a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a></div>
                         </li>
                         {% endfor %}
                     </ul>
@@ -47,6 +47,15 @@
 
     </div>
     <!-- /.container -->
-
+    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+    <div id="kubica1988">
+      <script type="text/javascript">
+        Skype.ui({
+          "name": "call",
+          "element": "kubica1988",
+          "participants": ["kubica1988"]
+        });
+      </script>
+    </div>
 </div>
 <!-- /.intro-header -->

@@ -9,8 +9,11 @@ permalink: pretty
 
 social:
   - title: skype
-    url: kubica1988
+    url:
+    id: kubica1988
   - title: github
     url: https://github.com/kubalasecki
+    id: githublink
   - title: linkedin
     url: https://pl.linkedin.com/in/kubalasecki
+    id: linkedinlink
