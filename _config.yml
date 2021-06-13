@@ -1,0 +1,72 @@
+title: Weasel Company
+email: kuba@lasica.co
+url: https://lasica.co
+description: "Developing magic & making dreams possible."
+
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+footer: Weasel Company
+
+social:
+  - title: linkedin-in
+    url: https://pl.linkedin.com/in/kubalasecki
+  - title: facebook-f
+    url: https://facebook.com/lasicaco
+  - title: gitlab
+    url: https://gitlab.com/kubalasecki
+  - title: github
+    url: https://github.com/kubalasecki
+
+cards:
+  - name: Address
+    text: Krucza 13/1, 62-023 Koninko
+    icon: campground
+  - name: Email
+    text: kuba@lasica.co
+    icon: paper-plane
+  - name: Phone
+    text: +48 884 942 153
+    icon: mobile-alt
+
+clients:
+  - name: Signiroad
+    logo: logo9.svg
+    url: https://signiroad.pl
+    icon: building
+  - name: Fundacja Dziedzictwa Rzeczypospolitej
+    logo: logo6.jpg
+    url: https://www.fdrp.org.pl
+    icon: flag
+  - name: Policz
+    logo: logo7.png
+    url: https://policz.com.pl
+    icon: square-root-alt
+  - name: Voltic
+    logo: logo4.png
+    url: https://voltic.pl
+    icon: lightbulb
+  - name: Weasels
+    logo: logo3.svg
+    url: https://weasels.co
+    icon: truck-moving
+  - name: Interia
+    logo: logo8.png
+    url: https://interia.pl
+    icon: globe-europe
+  - name: AdRetail
+    logo: logo5.webp
+    url: https://adretail.pl
+    icon: meteor
+  - name: Productz GmBH
+    logo: logo1.webp
+    url: https://productz.com
+    icon: sitemap
+  - name: SSLGURU
+    logo: logo2.jpg
+    url: https://sslguru.com
+    icon: certificate
+
+markdown: kramdown
+permalink: pretty

@@ -1,0 +1,38 @@
+<section class="projects-section bg-light">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="img/lasica1.jpg" alt="..." /></div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Hi there!</h4>
+                    <p class="text-black-50 mb-0">My name is <b>Kuba Łasecki</b> and I am a Ruby enthusiast, developing some awesome Web and Mobile based products. I love to work on devops tools and open to discuss and gain knowledge on latest technologies and trends in automation, devops and cloud.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients-section bg-light" id="clients">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="mx-auto text-center">
+                <i class="fas fa-code fa-2x mb-2"></i>
+                <h2 class="mb-5">Working with and for</h2>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5">
+            {% for client in site.clients %}
+            <div class="col-md-4 mb-3">
+                <a href="{{ client.url }}" rel="nofollow" target="_blank" class="client-card">
+                    <div class="card h-100 align-bottom">
+                        <div class="card-body text-center">
+                            <i class="fas fa-{{ client.icon }} text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">{{ client.name }}</h4>
+                            <hr class="mx-auto" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
