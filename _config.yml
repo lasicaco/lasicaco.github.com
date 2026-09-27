@@ -39,10 +39,10 @@ clients:
     logo: logo6.jpg
     url: https://www.fdrp.org.pl
     icon: flag
-  - name: Policz
+  - name: SpedPro
     logo: logo7.png
-    url: https://policz.com.pl
-    icon: square-root-alt
+    url: https://spedpro.pl
+    icon: truck-moving
   - name: Voltic
     logo: logo4.png
     url: https://voltic.pl
